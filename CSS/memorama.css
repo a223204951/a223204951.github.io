@@ -3,40 +3,49 @@ body {
     background-color: #ffe6f0;
     color: #333;
     margin: 0;
-    padding: 10px; /* Reducido padding */
+    padding: 10px;
+    /* Reducido padding */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden; /* Evitar scroll vertical */
+    overflow: hidden;
+    /* Evitar scroll vertical */
 }
 
 .container {
     background-color: #fff;
-    padding: 15px; /* Reducido padding */
+    padding: 15px;
+    /* Reducido padding */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Reducido ancho máximo */
+    max-width: 500px;
+    /* Reducido ancho máximo */
     width: 100%;
 }
 
 h1 {
     text-align: center;
     color: #ff66b2;
-    font-size: 1.5em; /* Reducido tamaño de fuente */
+    font-size: 1.5em;
+    /* Reducido tamaño de fuente */
 }
 
 select,
 input[type="button"] {
-    padding: 8px; /* Reducido padding */
-    margin: 0px 0; /* Reducido margen */
+    padding: 8px;
+    /* Reducido padding */
+    margin: 0px 0;
+    /* Reducido margen */
     border: 1px solid #ff99cc;
     border-radius: 4px;
-    width: calc(100% - 18px); /* Ajustado para compensar el padding */
+    width: calc(100% - 18px);
+    /* Ajustado para compensar el padding */
     box-sizing: border-box;
     cursor: pointer;
-    font-size: 0.9em; /* Reducido tamaño de fuente */
+    font-size: 0.9em;
+    /* Reducido tamaño de fuente */
 }
 
 input[type="button"] {
@@ -50,8 +59,10 @@ input[type="button"]:hover {
 
 /* Estilo para celdas */
 td {
-    width: 100px; /* Ancho de las cartas reducido */
-    height: 100px; /* Altura de las cartas reducida */
+    width: 100px;
+    /* Ancho de las cartas reducido */
+    height: 100px;
+    /* Altura de las cartas reducida */
     text-align: center;
     border: 1px solid #ff99cc;
 }
@@ -59,7 +70,8 @@ td {
 /* Imagen dentro de las celdas */
 .imagen {
     width: 100%;
-    height: 100%; /* Ajustado a 100% para que ocupe toda la celda */
+    height: 100%;
+    /* Ajustado a 100% para que ocupe toda la celda */
     object-fit: cover;
     border-radius: 4px;
 }
@@ -69,7 +81,8 @@ td {
     color: white;
     margin-bottom: 10px;
     width: auto;
-    font-size: 0.9em; /* Reducido tamaño de fuente */
+    font-size: 0.9em;
+    /* Reducido tamaño de fuente */
 }
 
 .back-button:hover {
@@ -77,16 +90,24 @@ td {
 }
 
 .game-board {
-    display: flex; /* Cambiado de inline-block a flex */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    margin: auto; /* Centra el tablero */
+    display: flex;
+    /* Cambiado de inline-block a flex */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    margin: auto;
+    /* Centra el tablero */
 }
 
 table {
     background-image: url("../IMG/fondo1.jpeg");
-    background-size: cover; /* Ajusta el fondo al tamaño de la tabla */
-    background-position: center; /* Asegura que el fondo esté centrado */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    margin: auto; /* Centra la tabla */
+    background-size: cover;
+    /* Ajusta el fondo al tamaño de la tabla */
+    background-position: center;
+    /* Asegura que el fondo esté centrado */
+    background-repeat: no-repeat;
+    /* Evita que el fondo se repita */
+    margin: auto;
+    /* Centra la tabla */
 }

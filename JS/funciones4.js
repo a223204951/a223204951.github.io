@@ -9,7 +9,7 @@ const restartButton = document.getElementById('restartButton');
 
 // Mostrar de quién es el turno
 function updateTurnDisplay() {
-    turnDisplay.textContent = ` ★ Turno de: ${currentPlayer} !!`;
+    turnDisplay.textContent = ` ★ Turno de: ` + `${currentPlayer}` + ` !!`;
 }
 
 function handleCellClick(clickedCell, clickedCellIndex) {
@@ -51,7 +51,7 @@ function handleResultValidation() {
     }
 
     if (roundWon) {
-        turnDisplay.textContent = `Jugador ${currentPlayer} ganó ^_< ☆`; // Mostrar quién ha ganado
+        turnDisplay.textContent = `Jugador ` + `${currentPlayer}` + ` ganó ^_< ☆`; // Mostrar quién ha ganado
         gameActive = false;
         return;
     }
