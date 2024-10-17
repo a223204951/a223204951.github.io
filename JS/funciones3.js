@@ -41,7 +41,7 @@ function EliminarPar(imagen1, imagen2) {
     if (contador != 8) {
         document.getElementById("contador").innerHTML = `★ Pares Encontrados: ` + ` ` + contador + ` ` + ` !!`;
     } else {
-        document.getElementById("contador").innerHTML = "Encontraste todos los pares!! ^_<☆";
+        document.getElementById("contador").innerHTML = "Encontraste todos los pares !! ^_<☆";
         document.getElementById("tablita").style.backgroundImage = `url("../IMG/fondo${fondo}.jpeg")`;  // Mostrar fondo al ganar
     }
 }
