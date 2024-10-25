@@ -1,1 +1,44 @@
-<center><img src="../IMG/MadoHomu hug plush.jpg" alt="centered image"> </center>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pila Genérica</title>
+    <link rel="stylesheet" href="../CSS/stack.css">
+    <script src="../JS/ofuscado5.js"></script>
+</head>
+
+<body onload="Aleatorias()">
+    <div class="container">
+        <a href="../index.html" class="back-button">
+            < Volver</a>
+                <h1>Pila Genérica</h1>
+                <div class="main-content">
+                    <div class="button-container">
+
+                        <br>Elemento: <input type="text" id="Elemento" onkeyup="CambioTexto()">
+                        <input type="button" value="⭒˚.⋆ Push() ⭒˚.⋆" id="iPush" onclick="Push(); Aleatorias();">
+                        <input type="button" value="⭒˚.⋆ Pop() ⭒˚.⋆" id="iPop" onclick="Pop()">
+                        <input type="button" value="⭒˚.⋆ Peek() ⭒˚.⋆" id="iPeek" onclick="Peek()">
+                        <input type="button" value="⭒˚.⋆ Clear() ⭒˚.⋆" id="iClear" onclick="Clear()">
+                        <input type="button" value="⭒˚.⋆ Find() ⭒˚.⋆" id="iFind" onclick="Find();">
+                        <input type="button" value="⭒˚.⋆ isEmpty() ⭒˚.⋆" id="iEmpty" onclick="isEmpty()">
+                    </div>
+                    <div class="game-board">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Índice</th>
+                                    <th>Elemento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <h3 id="mensaje"></h3>
+    </div>
+</body>
+
+</html>
