@@ -1,0 +1,124 @@
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Evitar scroll vertical */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evitar scroll vertical */
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ff66b2;
+    font-size: 1.5em;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estilo de los inputs */
+input[type="text"] {
+    text-align: center;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ff99bb;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+input[type="button"] {
+    background-color: #ff66b2; /* Rosa oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.8em;
+    transition: background-color 0.3s;
+}
+
+input[type="button"], .back-button {
+    margin: 5px; /* Espaciado entre botones */
+    width: 120px; /* Ancho fijo para los botones */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#tabla {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 2px solid #ff99cc;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+}
+
+p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.back-button {
+    background-color: #ff66b2;
+    color: white;
+    width: calc(100% - 20px);
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.back-button:hover {
+    background-color: #e65c9e;
+}
+
+#textResultado {
+    margin-top: 20px;
+    color: #333;
+}
+
+#textPaso {
+    margin-top: 20px;
+    color: #333;
+}
