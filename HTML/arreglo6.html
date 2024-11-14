@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Expresión Postfija</title>
+    <link rel="stylesheet" href="../CSS/postfija.css">
+    <script src="../JS/ofuscado6.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-button">
+            < Volver</a>
+                <h1>Evaluación de Expresión Postfija</h1>
+                <label for="exp">☆ Expresión:</label>
+                <input type="text" id="exp" value="3 4 * 2 5 + - 4 * 2 /">
+                <div class="button-group">
+                    <input type="button" id="botonEval" value="⭒˚.⋆ Evaluar ⭒˚.⋆" onclick="Evaluar()">
+                    <input type="button" id="botonPaso" value="⭒˚.⋆ Pasos ⭒˚.⋆" onclick="pasoAPaso()">
+                    <input type="button" id="botonRein" value="⭒˚.⋆ Reiniciar ⭒˚.⋆" onclick="Reinicio()">
+                </div>
+                <p id="textResultado">★ Resultado:</p>
+                <table>
+                    <tbody id="tabla"></tbody>
+                </table>
+                <p id="textPaso">★ Pasos:<br></p>
+    </div>
+</body>
+
+</html>

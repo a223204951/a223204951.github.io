@@ -10,7 +10,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     /* Evitar scroll vertical */
 }
 
