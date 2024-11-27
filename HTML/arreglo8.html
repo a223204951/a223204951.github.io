@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Decipher</title>
+    <link rel="stylesheet" href="../CSS/ofuscadojuliocesar2.css">
+    <script src="../JS/ofuscado8.js" defer></script>
+</head>
+<body onload="load()">
+    <div class="container">
+        <a href="../index.html" class="back-button">
+            < Volver</a>
+        <h1>Descifrado César</h1>
+
+        <p>☆ Mensaje Encriptado:</p>
+        <textarea id="EncryptedMessage" rows="10" readonly></textarea>
+        <p>★ Llave:</p>
+        <div class="select-group">
+            <select id="key1" disabled><option value="">--</option></select>
+            <select id="key2" disabled><option value="">--</option></select>
+            <select id="key3" disabled><option value="">--</option></select>
+            <select id="key4" disabled><option value="">--</option></select>
+            <select id="key5" disabled><option value="">--</option></select>
+            <select id="key6" disabled><option value="">--</option></select>
+        </div>
+
+        <div class="button-container">
+            <input type="button" value="⭒˚.⋆ Limpiar ⭒˚.⋆" onclick="reset()">
+            <input type="file" id="keyFile" accept=".txt" hidden> 
+            <input type="button" value="⭒˚.⋆ Cargar keyFile ⭒˚.⋆" onclick="document.getElementById('keyFile').click()">
+
+            <input type="file" id="encryptedfile" accept=".txt" hidden>
+            <input type="button" value="⭒˚.⋆ Cargar encryptedMessage ⭒˚.⋆" onclick="document.getElementById('encryptedfile').click()">
+            
+            <input type="button" value="⭒˚.⋆ Decodificar ⭒˚.⋆" onclick="decrypt()">
+            <input type="button" value="⭒˚.⋆ Guardar decryptedMessage ⭒˚.⋆" onclick="saveMessage()">
+        </div>
+
+        <p>☆ Mensaje Original:</p>
+        <textarea id="originalMessage" rows="10" readonly></textarea>
+
+        </div>
+    </div>
+</body>
+</html>
